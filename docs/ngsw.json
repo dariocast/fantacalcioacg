@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574766566196,
+  "timestamp": 1574767655670,
   "index": "/fantacalcioacg/index.html",
   "assetGroups": [
     {
@@ -52,7 +52,7 @@
     "/fantacalcioacg/index.html": "f4476de3aceb5d4f3f858797c6dd5479767fc0c2",
     "/fantacalcioacg/main-es2015.67f2097f831406a05600.js": "42bf948b043aa52ad79f0bf66b390a803bc78e06",
     "/fantacalcioacg/main-es5.67f2097f831406a05600.js": "d38e5ba15e17e5056148134fb9a53a6805981da4",
-    "/fantacalcioacg/manifest.webmanifest": "2e68b9d0eb1a768078ded2ef8497e86c6e0f753c",
+    "/fantacalcioacg/manifest.webmanifest": "43e600b7748bf7022e9e3cb4221365cfb3d7aece",
     "/fantacalcioacg/polyfills-es2015.2987770fde9daa1d8a2e.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "/fantacalcioacg/polyfills-es5.6696c533341b95a3d617.js": "45c51483238468881240579c3fdecd19144cff17",
     "/fantacalcioacg/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
