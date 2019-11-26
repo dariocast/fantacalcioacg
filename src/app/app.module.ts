@@ -15,6 +15,7 @@ import { RegolamentoComponent } from './regolamento/regolamento.component';
 import { QuotazioniComponent } from './quotazioni/quotazioni.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {ReactiveFormsModule} from '@angular/forms';
   ],
   imports: [
     MaterialModule,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),

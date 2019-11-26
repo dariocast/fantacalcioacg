@@ -1,5 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute, Router} from '@angular/router';
+import {AuthService} from '../auth.service';
+import {first} from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -8,11 +11,20 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+              private route: ActivatedRoute,
+              private router: Router,
+              private authenticationService: AuthService
+  ) {
+    // redirect to home if already logged in
+    if (this.authenticationService.squadraCorrenteValue) {
+      this.router.navigate(['']);
+    }
+  }
 
   form: FormGroup = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
+    nomeSquadra: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
   });
   @Input() error: string | null;
 
@@ -23,7 +35,15 @@ export class LoginComponent implements OnInit {
 
   submit() {
     if (this.form.valid) {
-      this.submitEM.emit(this.form.value);
+      this.authenticationService.login(this.form.value.nomeSquadra, this.form.value.password)
+        .pipe(first())
+        .subscribe(
+          data => {
+            this.router.navigate(['']);
+          },
+          error => {
+            console.log(error);
+          });
     }
   }
 
