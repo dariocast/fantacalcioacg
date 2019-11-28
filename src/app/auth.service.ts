@@ -21,9 +21,9 @@ export class AuthService {
     return this.squadraCorrenteSubject.value;
   }
 
-  login(nomeSquadra: string, password: string) {
+  login(nome: string, password: string) {
     const api = Constants.APIURL + 'squadra/login.php';
-    return this.http.post<any>(api, { nomeSquadra, password }, Constants.HTTPHEADERS)
+    return this.http.post<any>(api, { nome, password }, Constants.HTTPHEADERS)
       .pipe(map(squadra => {
         // login successful if there's a jwt token in the response
         if (squadra) {

@@ -3,9 +3,16 @@
     <img alt="Home" height="40" src="assets/logo_bianco.png" title="Home" ></button>
   <span>Fantacalcio ACG</span>
   <span style="flex: 1 1 auto;"></span>
-  <button mat-icon-button [routerLink]="'/login'" >
-    <mat-icon aria-hidden="false" aria-label="Login">exit_to_app</mat-icon>
-  </button>
+  <div *ngIf="current==null">
+    <button mat-icon-button [routerLink]="'/login'" >
+      <mat-icon aria-hidden="false" aria-label="Login">exit_to_app</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="current!=null">
+    <button mat-icon-button (click)="logout()" [routerLink]="['']" >
+      <mat-icon aria-hidden="false" aria-label="Login">quit</mat-icon>
+    </button>
+  </div>
 
 </mat-toolbar>
 <nav backgroundColor="primary" mat-tab-nav-bar mat-align-tabs="center">

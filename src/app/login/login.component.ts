@@ -26,9 +26,6 @@ export class LoginComponent implements OnInit {
     nomeSquadra: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
   });
-  @Input() error: string | null;
-
-  @Output() submitEM = new EventEmitter();
 
   ngOnInit() {
   }
