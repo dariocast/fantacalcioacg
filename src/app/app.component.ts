@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {AuthService} from './auth.service';
+import {Squadra} from './_models/squadra';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fantacalcioacg';
+  title = 'Fantacalcio ACG';
+  current: Squadra;
+
+  constructor(private auth: AuthService) {
+    this.current = this.auth.squadraCorrenteValue;
+  }
+
+  navLinks = [
+    { label: 'Quotazioni', path: '/quotazioni' },
+    { label: 'Regolamento', path: '/regolamento' },
+    { label: 'Formazioni', path: '/formazioni' },
+    { label: 'Schiera formazione', path: '/schiera-formazione' },
+    { label: 'Pannello di Controllo', path: '/admin-dashboard' }
+  ];
+
+  logout() {
+    this.auth.logout();
+  }
 }
