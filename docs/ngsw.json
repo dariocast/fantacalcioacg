@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574947870878,
+  "timestamp": 1574951974362,
   "index": "/fantacalcioacg/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/fantacalcioacg/favicon.ico",
         "/fantacalcioacg/index.html",
-        "/fantacalcioacg/main-es2015.32067334de534106ddb8.js",
-        "/fantacalcioacg/main-es5.32067334de534106ddb8.js",
+        "/fantacalcioacg/main-es2015.3c49c3f2151413226636.js",
+        "/fantacalcioacg/main-es5.3c49c3f2151413226636.js",
         "/fantacalcioacg/manifest.webmanifest",
         "/fantacalcioacg/polyfills-es2015.2987770fde9daa1d8a2e.js",
         "/fantacalcioacg/polyfills-es5.6696c533341b95a3d617.js",
@@ -101,9 +101,9 @@
     "/fantacalcioacg/assets/logo.png": "a195df3239f186e434976305822196e36896c42f",
     "/fantacalcioacg/assets/logo_bianco.png": "5302febf32476b97c583174624edb589afd567ef",
     "/fantacalcioacg/favicon.ico": "7ceb896641d53c4ba195baf9075ae88e07fbbd4d",
-    "/fantacalcioacg/index.html": "70b48fd83c4c794adbf6ae008465111a3f432fde",
-    "/fantacalcioacg/main-es2015.32067334de534106ddb8.js": "f0881b19ad6400f2b735948a5d125d1e3d702fa3",
-    "/fantacalcioacg/main-es5.32067334de534106ddb8.js": "9cc3095df87051746fb72f70a0ebc21c3977273e",
+    "/fantacalcioacg/index.html": "1dacd59806b8ed427bf099b8d8057f612cc8cdc1",
+    "/fantacalcioacg/main-es2015.3c49c3f2151413226636.js": "a85d2a59bfd8418a57b0517dab2d7a122e514d89",
+    "/fantacalcioacg/main-es5.3c49c3f2151413226636.js": "faf34809489f4073a011838c017cbf173888ae9f",
     "/fantacalcioacg/manifest.webmanifest": "fdf1181a42293defcc019782d98d19576bd93d5e",
     "/fantacalcioacg/polyfills-es2015.2987770fde9daa1d8a2e.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "/fantacalcioacg/polyfills-es5.6696c533341b95a3d617.js": "45c51483238468881240579c3fdecd19144cff17",
