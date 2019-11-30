@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574951974362,
+  "timestamp": 1575133964125,
   "index": "/fantacalcioacg/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,14 @@
       "urls": [
         "/fantacalcioacg/favicon.ico",
         "/fantacalcioacg/index.html",
-        "/fantacalcioacg/main-es2015.3c49c3f2151413226636.js",
-        "/fantacalcioacg/main-es5.3c49c3f2151413226636.js",
+        "/fantacalcioacg/main-es2015.0e65c483f014e0cb5202.js",
+        "/fantacalcioacg/main-es5.0e65c483f014e0cb5202.js",
         "/fantacalcioacg/manifest.webmanifest",
         "/fantacalcioacg/polyfills-es2015.2987770fde9daa1d8a2e.js",
         "/fantacalcioacg/polyfills-es5.6696c533341b95a3d617.js",
         "/fantacalcioacg/runtime-es2015.edb2fcf2778e7bf1d426.js",
         "/fantacalcioacg/runtime-es5.edb2fcf2778e7bf1d426.js",
-        "/fantacalcioacg/styles.18a333903389b57095c0.css"
+        "/fantacalcioacg/styles.c21d9e3fa7a457ab8445.css"
       ],
       "patterns": []
     },
@@ -101,15 +101,15 @@
     "/fantacalcioacg/assets/logo.png": "a195df3239f186e434976305822196e36896c42f",
     "/fantacalcioacg/assets/logo_bianco.png": "5302febf32476b97c583174624edb589afd567ef",
     "/fantacalcioacg/favicon.ico": "7ceb896641d53c4ba195baf9075ae88e07fbbd4d",
-    "/fantacalcioacg/index.html": "1dacd59806b8ed427bf099b8d8057f612cc8cdc1",
-    "/fantacalcioacg/main-es2015.3c49c3f2151413226636.js": "a85d2a59bfd8418a57b0517dab2d7a122e514d89",
-    "/fantacalcioacg/main-es5.3c49c3f2151413226636.js": "faf34809489f4073a011838c017cbf173888ae9f",
-    "/fantacalcioacg/manifest.webmanifest": "fdf1181a42293defcc019782d98d19576bd93d5e",
+    "/fantacalcioacg/index.html": "8b94abeec445686c7a7efafb2b0f248478942b26",
+    "/fantacalcioacg/main-es2015.0e65c483f014e0cb5202.js": "1684df304619031ece817082e7ada9d28a8008c2",
+    "/fantacalcioacg/main-es5.0e65c483f014e0cb5202.js": "6b357f378e894b93822d396fec7dfbc41c80e52d",
+    "/fantacalcioacg/manifest.webmanifest": "d299b376d39f9c8e06f91727ab8750d4d101264f",
     "/fantacalcioacg/polyfills-es2015.2987770fde9daa1d8a2e.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "/fantacalcioacg/polyfills-es5.6696c533341b95a3d617.js": "45c51483238468881240579c3fdecd19144cff17",
     "/fantacalcioacg/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/fantacalcioacg/runtime-es5.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/fantacalcioacg/styles.18a333903389b57095c0.css": "8ec9d33aedd69b5360effd20764ab9067fca61c6"
+    "/fantacalcioacg/styles.c21d9e3fa7a457ab8445.css": "8ec9d33aedd69b5360effd20764ab9067fca61c6"
   },
   "navigationUrls": [
     {
