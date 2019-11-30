@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {Squadra} from './_models/squadra';
+import {Squadra} from '../_models/squadra';
 import {map} from 'rxjs/operators';
-import {Constants} from './_models/constants';
+import {Constants} from '../_models/constants';
 
 @Injectable({
   providedIn: 'root'

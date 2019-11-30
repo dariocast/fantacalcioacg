@@ -101,6 +101,10 @@ THE SOFTWARE.
 
 @angular/material/snack-bar
 
+@angular/material/sort
+
+@angular/material/table
+
 @angular/material/tabs
 
 @angular/material/toolbar

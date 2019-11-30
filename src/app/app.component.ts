@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AuthService} from './auth.service';
+import {AuthService} from './_services/auth.service';
 import {Squadra} from './_models/squadra';
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Fantacalcio ACG';
   current: Squadra;
 
-  constructor(private auth: AuthService) {
+  constructor(public auth: AuthService) {
     this.current = this.auth.squadraCorrenteValue;
   }
 

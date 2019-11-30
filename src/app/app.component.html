@@ -3,16 +3,20 @@
     <img alt="Home" height="40" src="assets/logo_bianco.png" title="Home" ></button>
   <span>Fantacalcio ACG</span>
   <span style="flex: 1 1 auto;"></span>
-  <div *ngIf="current==null">
+
+  <div *ngIf="auth.squadraCorrente | async; then authenticated else guest" >
+    <!-- template will replace this div -->
+  </div>
+  <ng-template #guest>
     <button mat-icon-button [routerLink]="'/login'" >
       <mat-icon aria-hidden="false" aria-label="Login">exit_to_app</mat-icon>
     </button>
-  </div>
-  <div *ngIf="current!=null">
+  </ng-template>
+  <ng-template #authenticated>
     <button mat-icon-button (click)="logout()" [routerLink]="['']" >
-      <mat-icon aria-hidden="false" aria-label="Login">quit</mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Logout">power_settings_new</mat-icon>
     </button>
-  </div>
+  </ng-template>
 
 </mat-toolbar>
 <nav backgroundColor="primary" mat-tab-nav-bar mat-align-tabs="center">

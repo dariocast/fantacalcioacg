@@ -1,1 +1,58 @@
-<p>quotazioni works!</p>
+<mat-tab-group>
+  <mat-tab label="Maschi">
+    <table mat-table [dataSource]="dataSourceM" class="mat-elevation-z2" matSort #sorterM="matSort">
+
+      <ng-container matColumnDef="nome" >
+        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.nome}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="gruppo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Gruppo </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.gruppo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ruolo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Ruolo </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.ruolo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="costo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Costo </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.costo}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </mat-tab>
+  <mat-tab label="Femmine">
+    <table mat-table [dataSource]="dataSourceF" class="mat-elevation-z2" matSort #sorterF="matSort">
+
+      <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.nome}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="gruppo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Gruppo </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.gruppo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ruolo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Ruolo </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.ruolo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="costo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Costo </th>
+        <td mat-cell *matCellDef="let giocatore"> {{giocatore.costo}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </mat-tab>
+</mat-tab-group>

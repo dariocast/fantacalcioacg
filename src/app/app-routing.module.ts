@@ -7,15 +7,17 @@ import {RegolamentoComponent} from './regolamento/regolamento.component';
 import {QuotazioniComponent} from './quotazioni/quotazioni.component';
 import {AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component';
 import {LoginComponent} from './login/login.component';
+import {AuthGuard} from './_guards/auth.guard';
+import {AdminGuard} from './_guards/admin.guard';
 
 
 const routes: Routes = [
   {path: '', component: HomepageComponent},
-  {path: 'formazioni', component: FormazioniComponent},
-  {path: 'schiera-formazione', component: SchieraFormazioneComponent},
+  {path: 'formazioni', component: FormazioniComponent, canActivate: [AuthGuard]},
+  {path: 'schiera-formazione', component: SchieraFormazioneComponent, canActivate: [AuthGuard]},
   {path: 'regolamento', component: RegolamentoComponent},
   {path: 'quotazioni', component: QuotazioniComponent},
-  {path: 'admin-dashboard', component: AdminDashboardComponent},
+  {path: 'admin-dashboard', component: AdminDashboardComponent, canActivate: [AuthGuard, AdminGuard]},
   {path: 'login', component: LoginComponent}
 ];
 
