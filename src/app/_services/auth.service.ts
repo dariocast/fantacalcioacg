@@ -23,11 +23,9 @@ export class AuthService {
 
   login(nome: string, password: string) {
     const api = Constants.APIURL + 'squadra/login.php';
-    return this.http.post<any>(api, { nome, password }, Constants.HTTPHEADERS)
+    return this.http.post<any>(api, { "username":nome, "password":password }, Constants.HTTPHEADERS)
       .pipe(map(squadra => {
-        // login successful if there's a jwt token in the response
         if (squadra) {
-          // store user details and jwt token in local storage to keep user logged in between page refreshes
           localStorage.setItem('squadraCorrente', JSON.stringify(squadra));
           this.squadraCorrenteSubject.next(squadra);
         }
