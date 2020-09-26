@@ -1,0 +1,14 @@
+.mat-row {
+    height: auto;
+  }
+  
+.mat-cell {
+padding: 8px 8px 8px 0;
+}
+
+.main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

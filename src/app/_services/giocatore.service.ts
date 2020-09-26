@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Constants} from '../_models/constants';
-import {map} from 'rxjs/operators';
 import {Giocatore} from '../_models/giocatore';
 
 @Injectable({
@@ -13,12 +12,12 @@ export class GiocatoreService {
   }
 
   getMaschi() {
-    const api = Constants.APIURL + 'giocatore/getGiocatori.php';
+    const api = Constants.APIURL + 'giocatore/readAll.php?g=m';
     return this.http.get<Giocatore[]>(api);
   }
 
   getFemmine() {
-    const api = Constants.APIURL + 'giocatore/getGiocatrici.php';
+    const api = Constants.APIURL + 'giocatore/readAll.php?g=f';
     return this.http.get<Giocatore[]>(api);
   }
 }
